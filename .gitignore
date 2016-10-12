@@ -37,4 +37,5 @@ captures/
 .idea/workspace.xml
 
 # Keystore files
-*.jks
+# Disabled to allow example keystore included in the project
+#*.jks
