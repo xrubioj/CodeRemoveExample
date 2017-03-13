@@ -33,9 +33,28 @@ android {
             jniDebuggable false
         }
         debug {
+            // No minification, no optimization and no obfuscation
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        //debug {     // debugMinify
+        //    // Minification, no optimization and no obfuscation
+        //    minifyEnabled true
+        //    useProguard false
+        //    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        //}
+        //debug {     // debugMinifyProguardDontObfuscate
+        //    // Minification, optimization and no obfuscation
+        //    minifyEnabled true
+        //    useProguard true
+        //    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'proguard-rules-debug.pro'
+        //}
+        //debug {     // debugMinifyProguard
+        //    // Minification, optimization and obfuscation
+        //    minifyEnabled true
+        //    useProguard true
+        //    proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        //}
     }
 }
 
